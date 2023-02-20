@@ -1,0 +1,26 @@
+POST http://localhost:1337/cctv/cctv-location
+Content-Type: application/json
+
+{
+   "nama_lokasi": "SP Soekarno Hatta - Batununggal",
+   "latitude": "-6.949489",
+   "longitude": "107.626006"
+}
+
+
+###
+POST http://localhost:1337/cctv/cctv-location/list
+Content-Type: application/json
+
+{
+   "id_cctv_lokasi": 1,
+   "nama_cctv": "PV Dago 2",
+   "stream": "testtest.stream"
+}
+
+
+###
+GET http://localhost:1337/cctv/cctv-location/list/-6.949489&107.626006
+###
+GET http://localhost:1337/cctv/cctv-location
+
